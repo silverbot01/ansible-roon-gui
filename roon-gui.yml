@@ -1,0 +1,19 @@
+---
+- name: Roon GUI
+  hosts: localhost
+  become: true
+
+  roles:
+    - wine
+
+- name: Run as normal user
+  hosts: localhost
+
+  pre_tasks:
+    - name: Reinstall roon-on-wine
+      when: lookup('env', 'ROON_ON_WINE_REINSTALL') is defined
+      ansible.builtin.set_fact:
+        roon_on_wine_reinstall: "{{ lookup('env', 'ROON_ON_WINE_REINSTALL') }}"
+
+  roles:
+    - roon-on-wine

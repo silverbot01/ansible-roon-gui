@@ -1,0 +1,4 @@
+- name: wine
+  src: https://github.com/oosten246/ansible-role-wine
+- name: roon-on-wine
+  src: https://github.com/oosten246/ansible-role-roon-on-wine
