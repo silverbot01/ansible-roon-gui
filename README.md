@@ -41,10 +41,10 @@ Tested How?
 -----------
 * Fresh OS install, fully patched in a VM on a KVM/QEMU host.
 * In a terminal window use the one-line install command.
-* Start the Roon GUI start.
+* Start the Roon GUI.
 * Connect to Roon server.
 * Play music to a Chromecast end point.
-* Play music to a roon-bridge end point.
+* Play music to a Roon-bridge end point.
 
 Role Variables
 --------------
