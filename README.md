@@ -9,17 +9,17 @@ Requirements
 
 If Ansible is not yet installed you can use below one-line command that does it all: Install the software to run the Ansible playbook plus dependencies, and then run the playbook to install the latest version of Wine and the Roon GUI.
 
-    wget -O- https://github.com/oosten246/ansible-roon-gui/install.sh | bash -s
+    wget -O- https://raw.githubusercontent.com/oosten246/ansible-roon-gui/install.sh | bash -s
 or
 
-    curl -sfL https://github.com/oosten246/ansible-roon-gui/install.sh | bash -s
+    curl -sfL https://raw.githubusercontent.com/oosten246/ansible-roon-gui/install.sh | bash -s
 
 To delete and reinstall the Roon GUI you can use this one-line command:
 
-    wget -O- https://github.com/oosten246/ansible-roon-gui/install.sh | ROON_ON_WINE_REINSTALL=true bash -s
+    wget -O- https://raw.githubusercontent.com/oosten246/ansible-roon-gui/install.sh | ROON_ON_WINE_REINSTALL=true bash -s
 or
 
-    curl -sfL https://github.com/oosten246/ansible-roon-gui/install.sh | ROON_ON_WINE_REINSTALL=true bash -s
+    curl -sfL https://raw.githubusercontent.com/oosten246/ansible-roon-gui/install.sh | ROON_ON_WINE_REINSTALL=true bash -s
 
 The information about Role Variables, Dependencies and Example Playbook is only applicable if you do not use the one-line commands.
 
